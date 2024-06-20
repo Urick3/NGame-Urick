@@ -1,0 +1,29 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields":{
+            "username": "urick",
+            "password": "urick@@123",
+            "email": "urick@gmail.com"
+        }
+    },
+    {
+        "model": "my_app.Roupa",
+        "pk": 1,
+        "fields":{
+            "title": "Elden Ring",
+            "description": "Elden Ring é ambientado em um mundo de fantasia de larga escala, conhecido como The Lands Between. O jogador assume o papel de um personagem que é conhecido como o Lorde da Ceniza, que é encarregado de encontrar e destruir as fontes do poder mágico que sustentam o mundo.",
+            "path": "/2024/06/19/Elden_Ring_capa.jpg"
+        }
+    },
+    {
+        "model": "my_app.Roupa",
+        "pk": 2,
+        "fields":{
+            "title": "Red Dead Redemption 2",
+            "description": "Estados Unidos, 1899. O fim da era do velho oeste se aproxima, e os xerifes caçam as últimas gangues fora da lei. Quem não se rende ou sucumbe, acaba morto. Depois de tudo dar errado em um roubo na cidade de Blackwater, no faroeste, Arthur Morgan e a gangue Van der Linde são obrigados a fugir.",
+            "path": "/2024/06/19/Red_Dead_Redemption_2.png"
+        }
+    }
+]
