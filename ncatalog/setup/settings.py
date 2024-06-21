@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'gamecatalog',
+        'NAME': 'game2',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': '127.0.0.1',

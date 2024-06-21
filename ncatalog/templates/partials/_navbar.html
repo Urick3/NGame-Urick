@@ -7,11 +7,11 @@
         <ul class="navbar-nav ms-auto">
             {% if user.is_authenticated %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'home' %}" style="color: white; padding-right: 20px;">Home</a>  
+                  <a class="nav-link" href="{% url 'home' %}" style="color: white; padding-right: 20px; font-size: 20px; font-family: Courier New;">Home</a>  
                 </li>
             
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'logout' %}" style="color: white; padding-right: 20px;">Logout</a>
+                    <a class="nav-link" href="{% url 'logout' %}" style="color: white; padding-right: 20px; font-size: 20px; font-family: Courier New;">Logout</a>
                 </li>
             {% else %}
                 <li class="nav-item">

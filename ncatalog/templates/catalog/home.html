@@ -2,16 +2,16 @@
 
 {% block content %}
 <div class="row">
-    {% if clothes %}
-        {% for clothing in clothes %}
+    {% if games %}
+        {% for game in games %}
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img class="card-img-top" src="{{ clothing.path.url }}" alt="{{ clothing.title }}">
+                    <img class="card-img-top" src="{{ game.path.url }}" alt="{{ game.title }}">
                     <div class="card-body">
-                        <h5 class="card-title">{{ clothing.title }}</h5>
-                        <p class="card-text">{{ clothing.description }}</p>
-                        <a href="{% url 'edit_clothing' clothing.id %}" class="btn btn-warning">Editar</a>
-                        <form method="post" action="{% url 'delete_clothing' clothing.id %}" style="display:inline;">
+                        <h5 class="card-title">{{ game.title }}</h5>
+                        <p class="card-text">{{ game.description }}</p>
+                        <a href="{% url 'edit_game' game.id %}" class="btn btn-warning">Editar</a>
+                        <form method="post" action="{% url 'delete_game' game.id %}" style="display:inline;">
                             {% csrf_token %}
                             <button type="submit" class="btn btn-danger">Deletar</button>
                         </form>
@@ -21,5 +21,6 @@
         {% endfor %}
     {% endif %}
 </div>
-<a href="{% url 'add_clothing' %}" class="btn btn-success">Adicionar Jogo</a>
+<a href="{% url 'add_game' %}" class="btn btn-success">Adicionar Jogo</a>
+{% include "partials/_footer2.html" %}
 {% endblock %}
