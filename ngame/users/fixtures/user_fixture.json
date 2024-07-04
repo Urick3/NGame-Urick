@@ -1,0 +1,21 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields":{
+            "username": "urick",
+            "password": "urick@@123",
+            "email": "urick@gmail.com"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields":{
+            "username": "julio",
+            "password": "julio@@123",
+            "email": "julio@gmail.com"
+        }
+    }
+]
+

@@ -1,0 +1,79 @@
+[
+    {
+        "model": "catalog.game",
+        "pk": 1,
+        "fields": {
+            "title": "Red Dead Redemption 2",
+            "path": "media/img/2024/7/03/Red_Dead_Redemption_2.png",
+            "description": "Vencedor de mais de 175 prêmios de Jogo do Ano e ganhador de mais de 250 pontuações perfeitas, RDR2 é a história épica do fora-da-lei Arthur Morgan e da infame gangue Van der Linde, em fuga pela América no alvorecer da era moderna. Também inclui acesso ao mundo compartilhado de Red Dead Online.",
+            "price": "299,90",
+            "amount": 1
+        }
+    },
+    {
+        "model": "catalog.game",
+        "pk": 2,
+        "fields": {
+            "title": "Elden Ring",
+            "path": "media/img/2024/7/03/Red_Dead_Redemption_2.png",
+            "description": "O NOVO RPG DE AÇÃO E FANTASIA. Ergue-te, Maculado, e deixa-te guiar pela graça para brandires o poder do Elden Ring e tornares-te um Lorde Elden nas Terras Intermédias.",
+            "price": "229,90",
+            "amount": 1
+        }
+    },
+    {
+        "model": "catalog.game",
+        "pk": 3,
+        "fields": {
+            "title": "God Of War",
+            "path": "media/img/2024/7/03/Red_Dead_Redemption_2.png",
+            "description": "Com a vingança contra os deuses do Olimpo enterrada há anos no passado, Kratos vive agora como um homem mortal num reino de deuses e monstros nórdicos. É neste mundo duro e impiedoso que ele tem de lutar para sobreviver... e ensinar o seu filho a fazer o mesmo.",
+            "price": "199,90",
+            "amount": 1
+        }
+    },
+    {
+        "model": "catalog.game",
+        "pk": 4,
+        "fields": {
+            "title": "The Last of Us Parte I",
+            "path": "media/img/2024/7/03/The_Last_of_Us_.png",
+            "description": "Numa civilização devastada, onde infetados e sobreviventes enrijecidos espalham o caos, Joel, um protagonista amargo, é contratado para tirar ilegalmente Ellie, uma garota de 14 anos, de uma zona de quarentena militarizada. Porém, o que começa por ser um trabalho simples depressa se transforma numa viagem brutal que os levará a percorrer o seu país.",
+            "price": "249,90",
+            "amount": 1
+        }
+    },
+    {
+        "model": "catalog.like",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "game": 1
+        }
+    },
+    {
+        "model": "catalog.like",
+        "pk": 1 ,
+        "fields": {
+            "user": 2,
+            "game": 1
+        }
+    },
+    {
+        "model": "catalog.like",
+        "pk": 3 ,
+        "fields": {
+            "user": 1,
+            "game": 1
+        }
+    },
+    {
+        "model": "catalog.comment",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "game": 1,
+            "content": "Bem diferente dos outros soulskile"
+        }
+    }
+]
