@@ -4,6 +4,7 @@ from .forms import *
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.http import JsonResponse
+from .forms import TicketForm
 
 @login_required
 def home(request):
@@ -116,3 +117,17 @@ def checkout(request):
         messages.success(request, 'Compra realizada com sucesso!')
         return redirect('index')
     return render(request, 'catalog/checkout.html', {'cart': cart})
+
+@login_required
+def criar_ticket(request):
+    if request.method == 'POST':
+        form = TicketForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('ticket_sucesso')
+    else:
+        form = TicketForm()
+    return render(request, 'tickets/criar_ticket.html', {'form': form})
+
+def ticket_sucesso(request):
+    return render(request, 'tickets/ticket_sucesso.html')

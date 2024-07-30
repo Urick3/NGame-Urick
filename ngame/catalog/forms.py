@@ -1,5 +1,6 @@
 from django import forms
-from .models import Game, Comment
+from .models import Game, Comment, Tickets
+from .models import Ticket
 
 class GameForm(forms.ModelForm):
     class Meta:
@@ -30,3 +31,8 @@ class CommentForm(forms.ModelForm):
         widgets = {
             'content': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Write your comment here...'}),
         }
+
+class TicketForm(forms.ModelForm):
+    class Meta:
+        model = Tickets
+        fields = ['nome', 'email', 'pergunta']
